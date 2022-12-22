@@ -2,7 +2,7 @@
 
 namespace App;
 
-abstract class Worker implements Worker_interface{
+abstract class Worker implements worker_interface{
 
     private string $name;
     private int $age;
@@ -29,5 +29,15 @@ abstract class Worker implements Worker_interface{
     {
         return $this->position;
     }
+    public function getName(): string // геттер
+    {
+        return $this->name;
+    }
+
+    public function getHours(): array // геттер
+    {
+        return $this->hours;
+    }
+
 
 }

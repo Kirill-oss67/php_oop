@@ -1,7 +1,8 @@
-<?php 
+<?php
+
 namespace App;
 
-interface Developer_interface extends Worker_interface{
+interface worker_interface{
     public function work();
     public function rest();
 }
